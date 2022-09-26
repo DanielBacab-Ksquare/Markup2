@@ -1,7 +1,76 @@
-
-
-.MortyGrid{
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+body{
+    /* background-color: #21232b; */
+   background-color: aqua;
+   font-family: sans-serif;
 }
 
+.MortyGrid{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(2, 1fr);
+    /* width: 100%;
+    height: auto; */
+
+}
+
+
+.Morty{
+    display: flex;
+    flex-direction: row;
+    background-color: #3c3e42;
+    border-radius: 5%;
+    justify-content: space-between; 
+}
+
+.photo{
+    background-color: pink;
+    height: max-content;
+    
+}
+
+img{
+    height: max-content;
+
+}
+
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+  
+}
+
+.name{
+    color: white;
+    font-size: 20px;
+}
+
+
+.bulletpoint{
+    color: #57cc44;
+    display: inline;
+}
+
+.status{
+    display: inline;
+    color: white;
+    margin-left: 10px;
+    
+}
+
+.subtitle{
+    color: #818083;
+}
+
+.date{
+    color: white
+    
+}
